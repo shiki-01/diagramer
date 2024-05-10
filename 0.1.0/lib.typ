@@ -1,5 +1,6 @@
 #import "@preview/jogs:0.2.3": *
 #import "@preview/pyrunner:0.2.0" as py
+#import "@preview/prequery:0.1.0"
 
 #let code = read("./lib.js")
 #let bytecode = compile-js(code)
@@ -25,7 +26,7 @@
 
   let py = py.call(pybytecode, "compress_and_encode", main.text)
 
-  
+  prequery.fallback.update(true)
 
   [
     \
@@ -39,6 +40,9 @@
     \
     \
     #link(py)
+    \
+    \
+    #prequery.image(py,"/image")
   ]
 }
 

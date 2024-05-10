@@ -50,4 +50,3 @@ def compress_and_encode(s):
     ascii_encoded = encode64(compressed)
 
     return "http://www.plantuml.com/plantuml/png/" + ascii_encoded
-
