@@ -1,0 +1,7 @@
+[package]
+name = "diagramer"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["@shiki-01"]
+license = "MIT"
+description = "An example package."
